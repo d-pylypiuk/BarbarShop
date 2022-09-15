@@ -68,13 +68,33 @@ header{
    width: 60px;
    margin-top: -1px;
    position: absolute;
-   background: orange;
+   // background: orange;
+}
+.signature{
+   margin-left: 80px;
+   font-size: 11px;
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-transform: uppercase;
 }
 .title{
-   margin:38px 0px 45px 0px;
-
+   font-family: 'Raleway', sans-serif;
+   font-size: 42px;
+   font-weight: bold;
+   letter-spacing: 5%;
+   line-height: 42px;
+   margin: 30px 0px;
 }
 .subtitle{
+   font-size: 18px;
+   letter-spacing: 2%;
+   line-height: 28px;
+   margin-bottom: 30px;
+}
+.text p{
+   font-size: 14px;
+   font-weight: 300;
+   letter-spacing: 2%;
    line-height: 28px;
 }
 // =======HEADER=========
@@ -86,7 +106,6 @@ header{
    flex-direction: row;
    justify-content: space-between;
    align-items: stretch;
-   // border: 1px solid blue;
 }
 .slider{
    height: 680px;
@@ -95,14 +114,14 @@ header{
 }
 .column{
    flex-grow: 1;
-   // border: 1px solid green;
 }
 .social-panel{
-   width: 120px;
+   width: 130px;
    display: flex;
    flex-direction: row;
-   justify-content: flex-start;
+   justify-content: flex-end;
    align-items: stretch;
+   overflow: hidden;
 }
 .social-box{
    padding-bottom: 72px;
@@ -112,21 +131,28 @@ header{
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   // border: 2px solid tomato;
 }
 .social-box__logo{
-   width: 100%;
-   // border: 1px solid gray;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 30px;
 }
-.logo-white{
-   // background: gray;
-   width: 100%;
+.logo-gray{
+   fill: var(--sociale-links);
+   width: 70px;
+   height: 70px;
+}
+
+div.social__links.__decor-line:before{
+   border-color: var(--sociale-links);
 }
 .social__links{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: center;
+   width: 200px;
    bottom: 170px;
    // border: 1px solid hotpink;
    transform: rotate(-90deg);
@@ -134,9 +160,9 @@ header{
 .social__links a{
    transform: all .3s ease-in-out .0s;
    color: var(--sociale-links);
-   font-size: 12px;
+   font-size: 14px;
    font-weight: 500;
-   padding: 0px 20px;
+   margin: 0px 20px;
 }
 .social__links a:hover{
    color: var(--hover-color);
@@ -205,16 +231,11 @@ header{
    background: var(--hover-color);
 }
 
-// ----------
+// ---------- header slider -------
 .slider__info{
    padding-left: 105px;
 }
 .slider__signature{
-   margin-left: 80px;
-   font-size: 11px;
-   font-weight: 400;
-   letter-spacing: 2px;
-   text-transform: uppercase;
    color: var(--signature-color);
 }
 .slider__title{
@@ -222,9 +243,57 @@ header{
    font-size: 72px;
    font-weight: bold;
    font-family: 'Raleway', sans-serif;
+   margin:38px 0px 45px 0px;
 }
 .slider__subtitle{
    font-size: 18px;
    font-weight: normal;
    color: var(--signature-color);
+}
+// --------- about us -----------
+
+.content{
+}
+.about-us__container{
+   margin: 130px 0px;
+}
+.about-us__row{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   align-items: flex-start;
+   
+}
+.about-us__photo-box{
+   width: 570px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+
+}
+.photo-box__items{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+.photo-box__items img{
+   width: 270px;
+   background: red;
+}
+.about-us__info{
+   margin-left: 60px;
+   width: 540px;
+}
+.info__signature{}
+.info__title{}
+.info__subtitle{}
+.about-us__text{}
+.about-us__btn{
+   margin-top: 40px;
+   color: var(--sociale-links);
+}
+.about-us__btn:hover{
+   color: var(--link-color);
 }
