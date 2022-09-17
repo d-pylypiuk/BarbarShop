@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 :root{
    // --title-color:#252B42;
    --link-color:#fff;
+   --body-color:#F7F7F7;
    --hover-color:#FF6C00;
    --signature-color:#9DA4BD;
    --sociale-links:#303030;
@@ -334,7 +335,7 @@ div.social__links.__decor-line:before{
    opacity: .6;
    color: var(--signature-color);
 }
-.prices__signature.__decor-line{
+div.prices__signature.__decor-line:before{
    border-color: var(--signature-color);
 }
 .prices__title{
@@ -386,3 +387,74 @@ div.social__links.__decor-line:before{
    justify-content: center;
    align-items: center;
 }
+// -----------why us ------
+// ---------------------------
+.why-us{
+   margin: 120px 0px;
+}
+.why-us__container{
+}
+.why-us__row{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.achievement__container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   width: 400px;
+   margin-right: 65px;
+   // padding-top: 40px;
+   // border:1px solid green;
+}
+.achievement__list:nth-child(1){
+   
+}
+.achievement__list:nth-child(2){
+   margin-top: 40px;
+}
+.achievement__list{
+}
+.achievement__list_items{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 10px;
+   margin-top: 30px;
+   width: 170px;
+   background: var(--body-color);
+}
+.list__items_numeric{
+   font-size: 42px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   color: var(--sociale-links);
+}
+.list__items_numeric:after{
+   content: '+';
+   position: absolute;
+   font-size: 25px;
+   font-weight: 300;
+   color:var(--hover-color)
+}
+.list__items_subtitle{
+   line-height: 18px;
+   font-size: 14px;
+   text-align: center;
+   align-items: center;
+}
+.why-us__info{}
+.why-us__signature{}
+div.why-us__signature.__decor-line:before{
+   border-color:var(--sociale-links);
+
+}
+.why-us__title{
+   color: var(--sociale-links);
+}
+.why-us__subtitle{}
+
+
